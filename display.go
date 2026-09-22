@@ -134,6 +134,8 @@ func (g *displayGame) Update() error {
 		return ebiten.Termination
 	}
 
+	updateEvents()
+
 	if g.update != nil {
 		g.update()
 	}
